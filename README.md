@@ -1,6 +1,7 @@
 # easy-peasy
 
-- Spring Boot practice
+- Kotlin & SpringBoot
+- For SpringBoot practice
 
 ## Contents
 - Spring MVC
