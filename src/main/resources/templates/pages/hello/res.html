@@ -1,0 +1,17 @@
+<!DOCTYPEhtml>
+<html
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="~{components/head :: head}"></head>
+<body>
+<div th:replace="~{components/header :: header}">Header</div>
+<div class="container-fluid">
+  <div class="text-center">
+    <h1>Hello Response</h1>
+    <a>User:<span th:text="${user}"></span></a>
+    <a>Password:<span th:text="${pass}"></span></a>
+  </div>
+</div>
+<div th:insert="~{components/footer :: footer}">&copy; 2019 The Static Templates</div>
+</body>
+</html>

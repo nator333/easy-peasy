@@ -1,0 +1,22 @@
+<!DOCTYPEhtml>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Easy Peasy!</title>
+  <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+  <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+  <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+  <link rel='stylesheet' th:href='@{/webjars/bootstrap/css/bootstrap.min.css}'>
+  <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet"
+        crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+  <form class="form-signin" method="post" th:action="@{/logout}">
+    <h2 class="form-signin-heading">Are you sure you want to log out?</h2>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Log Out</button>
+  </form>
+</div>
+</body>
+</html>

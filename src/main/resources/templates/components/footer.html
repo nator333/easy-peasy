@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!--/*  Multiple fragments may be defined in one file */-->
+<footer th:fragment="footer" th:align="center">
+  &copy; <span th:text="${#temporals.format(#temporals.createNow(), 'yyyy')}"></span>
+  <span>Masahiro Nakamata</span>
+</footer>
+</body>
+</html>
